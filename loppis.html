@@ -1,0 +1,214 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" integrity="sha256-ncjDAd2/rm/vaNTqp7Kk96MfSeHACtbiDU9NWKqNuCI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body, html {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <div style="margin:10px; display:none">
+        <div class="ui fluid icon input">
+            <input type="text" placeholder="Din e-postadress">
+        </div>
+        <div class="ui fluid icon input">
+            <input type="text" placeholder="Loppisnamn">
+            <i id="eventAction" class="inverted circular plus icon"></i>
+        </div>
+        <div class="ui fluid icon input">
+            <input type="text" placeholder="Kategori">
+            <i id="categoryAction" class="inverted circular plus icon"></i>
+        </div>
+        <div class="ui fluid icon input">
+            <input type="text" placeholder="Priser">
+            <i id="priceAction" class="inverted circular plus icon"></i>
+        </div>
+        <div class="field">
+            <div class="ui toggle checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Utlämning</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui toggle checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Ta bort</label>
+            </div>
+        </div>
+        <div class="ui button">Spara</div>
+    </div>
+    
+    <div class="ui divider"></div>
+    
+    <div style="margin:10px;">
+        <i class="ui circular cog icon"></i>
+        <div class="ui form">
+            <div class="field">
+                <label>Loppis</label>
+                <select class="ui search dropdown">
+                    <option value="1">Slagstaloppisen hösten 2018</option>
+                </select>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+
+        <div class="ui grid">
+            <div class="two column row">
+                <div class="left floated column">
+                    <div class="ui left labeled button" tabindex="0">
+                        <a class="ui red right pointing huge label">
+                            x15:-
+                        </a>
+                        <div class="ui button">
+                            <a class="ui big red circular label">010</a>
+                        </div>
+                    </div>
+
+                    <div style="padding:5px;"></div>
+
+                    <div class="ui left labeled button" tabindex="0">
+                        <a class="ui orange right pointing huge label">
+                            x30:-
+                        </a>
+                        <div class="ui button">
+                            <a class="ui big orange circular label">101</a>
+                        </div>
+                    </div>
+
+                    <div style="padding:5px;"></div>
+
+                    <div class="ui left labeled button" tabindex="0">
+                        <a class="ui green right pointing huge label">
+                            x40:-
+                        </a>
+                        <div class="ui button">
+                            <a class="ui big green circular label">010</a>
+                        </div>
+                    </div>
+
+                    <div style="padding:5px;"></div>
+
+                    <div class="ui left labeled button" tabindex="0">
+                        <a class="ui teal right pointing huge label">
+                            x50:-
+                        </a>
+                        <div class="ui button">
+                            <a class="ui big teal circular label">000</a>
+                        </div>
+                    </div>
+
+                    <div style="padding:5px;"></div>
+
+                    <div class="ui left labeled button" tabindex="0">
+                        <a class="ui purple right pointing huge label">
+                            100:-
+                        </a>
+                        <div class="ui button">
+                            <a class="ui big purple circular label">004</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right floated column">
+                    <div class="ui celled list">
+                        <div class="item">
+                            <i class="ui big icon arrow alternate circle left"></i>
+                            <div class="content">
+                                <div class="header">1 245:-</div>
+                                Inlämnat
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="ui big icon arrow alternate circle right outline"></i>
+                            <div class="content">
+                                <div class="header">2 354:-</div>
+                                Tillbaka
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="ui big icon big dollar sign"></i>
+                            <div class="content">
+                                <div class="header">2 135:-</div>
+                                Vinst
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui relaxed divided list">
+                        <div class="item">
+                            <i class="large orange money bill alternate middle aligned icon"></i>
+                            <div class="content">
+                                <div class="description">30:-</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="large teal money bill alternate middle aligned icon"></i>
+                            <div class="content">
+                                <div class="description">50:-</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="large orange money bill alternate middle aligned icon"></i>
+                            <div class="content">
+                                <div class="description">30:-</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="large purple money bill alternate middle aligned icon"></i>
+                            <div class="content">
+                                <div class="description">100:-</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="large orange money bill alternate middle aligned icon"></i>
+                            <div class="content">
+                                <div class="description">30:-</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="large purple money bill alternate middle aligned icon"></i>
+                            <div class="content">
+                                <div class="description">100:-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js" integrity="sha256-0gIvTkdsp0OOeV8tx3UTdi3ehppGwZbzQMvZJYhbzsE=" crossorigin="anonymous"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            $(document)
+                .ready(function () {
+
+                    $('.ui.checkbox')
+                        .checkbox('setting', 'onChange', function () {
+                        });
+                });
+
+
+        </script>
+        <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')</script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
